@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    row-gap: 5vh;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+header{
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+section{
+    grid-row: 2;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.ekomobilni-main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vh;
+    margin-top: 7vh;
+    align-items: start;
+    justify-items: flex-start;
+    gap: 5vh;
+    max-width: 50%;
+    z-index: 1;
+
+}
+.ekomobilni-icon{
+    scale: 1.5;
+    transform-origin: top left;
+}
+.image-wrapper{
+    max-width: 50%;
+}
+.girl-image{
+    transform: scale(1.7);
+    position: absolute;
+    right: 0;
+    transform-origin: top right; 
+    background-image: linear-gradient(90deg, rgba(173, 236, 151, 0.00) 0%, #ADEC97 100%);
+}
+.background-theme{
+    width: 100%;
+    position: absolute;
+    right: 0; 
+    top: -40vh;  
+}
+.lower-section{
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10rem;
+    gap: 3rem;
+    z-index: 1;
+    background-image: linear-gradient(180deg, rgba(173, 236, 151, 0.00) 0%, #ADEC97 100%);
+}
+
+.lower-section-gradient{
+    width: 70%;
+}
+footer{
+    grid-row: 4;
+    display: flex;
+    align-items: end;
+}
+.footer-content{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+.top-para{
+    margin-top: 3rem;
+    font-size: 8rem;
+    font-weight: 700;
+}
+.second-header{
+    color: var(--green-green-700, #2ECA3E);
+    font-size: 7rem;
+    font-weight: 800;
+}
+.header-section{
+    font-size: 4rem;
+    max-width: 80%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+}
+.qr-and-text{
+    position: relative;
+    margin-top: 5rem;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 60% 1fr;
+    column-gap: 5%;
+    grid-template-rows: auto;
+}
+.qr-and-text p{
+    display: inline-block;
+    height: fit-content;
+    font-size: 4rem;
+    color: var(--green-green-900, #00742E);
+}
+.qr-and-text p:first-child{
+    font-size: 4rem;
+}
+
+.qr-img{
+    transform: scale(2.3);
+    transform-origin: top right;
+    justify-self: center;
+    align-self: top;
+    grid-column: 2;
+    grid-row: 1/ 3;
+}
+.section-header{
+    margin-top: 15vh;
+    font-size: 7vh;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--green-green-900, #00742E);
+}
+.section-content{
+    margin-top: 5vh;
+    scale: 1.7;
+    transform-origin: top;
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.pseudo-button{
+    width: 40vh;
+    height: 10vh;
+    border: 2px solid var(--green-green-900, #00742E);
+}
+.line{
+    align-self: flex-start;
+    padding-top: 1.5vh;
+}
+
+.lower-section-image{
+    /* transform: scale(2);
+    transform-origin: top left; */
+    margin-left: 7rem;
+    align-self: flex-start;
+    width: auto;
+    height: 100%;
+}
+.lower-section-text{
+    justify-self: end;
+    width: 60%;
+    margin-right: 9rem;
+    margin-left: auto;
+    margin-top: 12rem;
+}
+.lower-section-text p:first-child{
+    color: #00742E;
+    font-size: 3rem;
+}
+.lower-section-text p:nth-child(2){
+    margin-top: 2rem;
+    font-weight: 700;
+    color: #000;
+    font-size: 5rem;
+}
+.lower-section-text p:nth-child(3){
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #000;
+    font-size: 4rem;
+}
+.lower-section-text p:nth-child(4){
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #000;
+    font-size: 4rem;
+}
